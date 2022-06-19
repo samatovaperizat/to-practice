@@ -1,40 +1,14 @@
+let now = new Date();
 
-let country = prompt("What country are you from?");
+let h2 = document.querySelector("h2");
+let date = now.getDate();
+let hours = now.getHours();
+let minutes = now.getMinutes();
+let year = now.getFullYear();
 
-if (country === "Portugal", "Bishkek") {
-  alert("You are cool");
-}
 
-if (country !== "Portugal") {
-  alert("Too bad for you");
-}
-
-let person = prompt("Do you wear the glass?");
-
-if (person === "yes") {
-    alert(" I hope your eyes gets better soon");
-}
-
-let theCar = prompt("which car do you like?");
-
-if (theCar === "Fiat 500", "Audi"){
-    alert("you have a nice taste");
-}
-
-if (theCar !== "Fiat 500", "Audi"){
-    alert(" You don't have a taste");
-}
-
-let age = prompt("How old are you?");
-
-if (age < 18) {
-  alert("You cannot apply");
-} else {
-  alert("You can apply");
-}
-
-let ice = prompt("is it too cold?");
-if (ice = cold) {
-    alert
-
-}
+let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let day = days[now.getDay()];
+let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
+let month = months[now.getMonth()];
+h2.innerHTML= `${day} ${month} ${date}, ${hours}:${minutes}, ${year}`;
