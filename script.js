@@ -12,3 +12,7 @@ let day = days[now.getDay()];
 let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
 let month = months[now.getMonth()];
 h2.innerHTML= `${day} ${month} ${date}, ${hours}:${minutes}, ${year}`;
+
+let h3 = document.querySelector("h3");
+
+h3.innerHTML = "Hello";
